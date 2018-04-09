@@ -1,7 +1,12 @@
 @echo off
 echo.
+echo ***********************************************************************
 echo Copyright (c) 2018 audiodane (https://audiodane.dandk.org)
-echo NO warranty is provided, expressed, or implied.  USE AT YOUR OWN RISK.
+echo No warranty is provided, expressed, or implied.  USE AT YOUR OWN RISK.
+echo.
+echo NOTE: check the github repo for the latest if you'd like: 
+echo       https://github.com/audiodane/movefolders
+echo ***********************************************************************
 echo.
 
 setLocal EnableDelayedExpansion
@@ -64,8 +69,8 @@ mklink /j "%src%" "%dest%"
 exit /b
 
 :usagehelp
-echo.
 echo usage: movefolders {c:\dest\folder}
+echo.
 echo will move folders from current path location to dest\folder and create junction point links to the new location
 goto end
 
